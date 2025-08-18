@@ -1,8 +1,7 @@
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 
-
-const repoName = "My-Portfolio"; 
+const repoName = "Realm-of-Isaiah"; 
 
 export default defineConfig({
   plugins: [react()],
