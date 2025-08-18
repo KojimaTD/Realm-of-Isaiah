@@ -1,12 +1,30 @@
-# React + Vite
+# Realm of Isaiah
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to the **Realm of Isaiah** — my personal developer portfolio.  
+It’s designed with a fantasy RPG theme to showcase my skills, projects, and education in a fun yet professional way.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
+- **RPG Theme:** Skill tree for abilities, Quest Log for education, and styled panels.
+- **Interactive UI:** Dynamic greetings, hover animations, and responsive layout.
+- **Resume Download:** Direct PDF download from the site.
+- **Project Showcase:** Links to my GitHub work and notable builds.
+- **Deployed on GitHub Pages** for recruiters and collaborators.
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Tech Stack
+- React + Vite  
+- CSS Modules for scoped styling  
+- GitHub Pages for hosting  
+
+---
+
+## Running Locally
+
+```bash
+git clone https://github.com/IsaiahKing2120/Realm-of-Isaiah.git
+cd Realm-of-Isaiah
+npm install
+npm run dev
