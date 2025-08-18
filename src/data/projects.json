@@ -1,0 +1,30 @@
+[
+  {
+    "id": "ground-zero",
+    "title": "Ground Zero: Shattered Realm — Systems Prototype",
+    "summary": "UE5 sandbox where I practice gameplay basics—health UI, timing, and Blueprint/C++ workflows.",
+    "tags": ["UE5", "Game Dev", "C++"],
+    "repo": "https://github.com/IsaiahKing2120/Ground-Zero-Shattered-Realm"
+  },
+  {
+    "id": "e-plant-shopping",
+    "title": "e-Plant Shopping",
+    "summary": "Responsive React shop: product listing, cart flow, and clean component structure.",
+    "tags": ["React", "Frontend"],
+    "repo": "https://github.com/IsaiahKing2120/e-Plant-Shopping"
+  },
+  {
+    "id": "redux-data-rendering",
+    "title": "E-Commerce Data Rendering (Redux Toolkit)",
+    "summary": "State management drill—fetching, storing, and rendering product data with Redux Toolkit.",
+    "tags": ["React", "Redux"],
+    "repo": "https://github.com/IsaiahKing2120/E-Commerce-Data-Rendering-using-Redux-Toolkit"
+  },
+  {
+    "id": "event-planner",
+    "title": "Event Planner",
+    "summary": "Lightweight React project for events—forms, validation, and basic state patterns.",
+    "tags": ["React", "Frontend"],
+    "repo": "https://github.com/IsaiahKing2120/Event-planner"
+  }
+]

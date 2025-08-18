@@ -1,0 +1,21 @@
+{
+  "groups": [
+    {
+      "id": "frontend",
+      "title": "Frontend",
+      "nodes": [
+        { "id": "html", "title": "HTML", "tier": "Apprentice", "xp": 0.6 },
+        { "id": "css", "title": "CSS", "tier": "Apprentice", "xp": 0.55 },
+        { "id": "js", "title": "JavaScript", "tier": "Apprentice", "xp": 0.5 }
+      ]
+    },
+    {
+      "id": "tools",
+      "title": "Tools & Workflow",
+      "nodes": [
+        { "id": "git", "title": "Git", "tier": "Adept", "xp": 0.7 },
+        { "id": "github", "title": "GitHub", "tier": "Apprentice", "xp": 0.55 }
+      ]
+    }
+  ]
+}

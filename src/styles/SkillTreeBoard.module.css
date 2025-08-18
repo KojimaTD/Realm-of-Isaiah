@@ -1,0 +1,126 @@
+/* panel */
+.board {
+  --panel-bg: rgba(10, 16, 24, .75);
+  --panel-br: 12px;
+  --ring: rgba(125, 211, 252, .22);
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 1.25rem;
+  background:
+    radial-gradient(100% 60% at 50% 0%, rgba(255,255,255,.04), transparent),
+    var(--panel-bg);
+  border: 1px solid rgba(125, 211, 252, .15);
+  border-radius: var(--panel-br);
+  box-shadow: 0 10px 40px rgba(0,0,0,.45), inset 0 0 0 1px var(--ring);
+  backdrop-filter: blur(3px);
+  display: grid;
+  gap: 1rem;
+}
+
+@media (min-width: 900px) {
+  .board { grid-template-columns: 1fr 1fr 1fr; }
+}
+
+/* branches */
+.branch {
+  position: relative;
+  padding: .9rem;
+  border-radius: 10px;
+  background: rgba(0,0,0,.25);
+  border: 1px solid rgba(255,255,255,.06);
+}
+
+.branchTitle {
+  margin: 0 0 .6rem;
+  font-size: 1.15rem;
+  letter-spacing: .5px;
+}
+
+/* color accents per branch */
+.c_teal  { box-shadow: 0 0 0 1px rgba(45, 212, 191, .18), 0 0 24px rgba(45,212,191,.06) inset; }
+.c_blue  { box-shadow: 0 0 0 1px rgba(59, 130, 246, .18), 0 0 24px rgba(59,130,246,.06) inset; }
+.c_amber { box-shadow: 0 0 0 1px rgba(251, 191, 36, .18), 0 0 24px rgba(251,191,36,.06) inset; }
+
+/* vertical column of nodes */
+.column {
+  display: grid;
+  gap: .9rem;
+}
+
+/* node */
+.node {
+  --glow: rgba(99, 102, 241, .6);
+  position: relative;
+  background: rgba(20, 24, 36, .85);
+  border: 1px solid rgba(255,255,255,.08);
+  border-radius: 10px;
+  padding: .65rem .8rem .65rem .65rem;
+  display: grid;
+  grid-template-columns: 18px 1fr;
+  gap: .6rem;
+  align-items: center;
+  box-shadow: 0 0 10px rgba(0,0,0,.25), 0 0 0 1px rgba(255,255,255,.04) inset;
+  transition: transform .15s ease, box-shadow .2s ease, border-color .2s ease;
+}
+
+.node:hover {
+  transform: translateY(-2px);
+  border-color: rgba(255,255,255,.16);
+  box-shadow: 0 8px 18px rgba(0,0,0,.35), 0 0 0 1px rgba(255,255,255,.06) inset;
+}
+
+/* glowing orb */
+.orb {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 30% 30%, #fff, #a5b4fc 55%, #6366f1);
+  box-shadow: 0 0 6px #a5b4fc, 0 0 14px #6366f1, 0 0 28px var(--glow);
+}
+
+/* label */
+.label { display: grid; gap: .1rem; }
+.label strong { font-size: .98rem; line-height: 1.15; }
+.tier {
+  opacity: .8;
+  font-size: .78rem;
+  padding: .1rem .4rem;
+  border-radius: 999px;
+  background: rgba(99, 102, 241, .12);
+  border: 1px solid rgba(99, 102, 241, .32);
+  width: fit-content;
+}
+
+/* connector anchor + line */
+.link { position: relative; display: block; }
+
+/* faint connector line “up” to previous */
+.link::before {
+  content: "";
+  position: absolute;
+  left: 17px;
+  top: -14px;
+  width: 2px;
+  height: 14px;
+  background: linear-gradient(to top, rgba(99,102,241,.35), transparent);
+  border-radius: 2px;
+  opacity: 1;
+  pointer-events: none;
+}
+
+/* hide connector on the first node in each column */
+.column .node:first-child .link::before { opacity: 0; }
+
+/* tiers (color hint) */
+.node[data-tier~="Adept"] .tier {
+  background: rgba(45, 212, 191, .14);
+  border-color: rgba(45,212,191,.45);
+}
+.node[data-tier~="Apprentice"] .tier {
+  background: rgba(59,130,246,.14);
+  border-color: rgba(59,130,246,.45);
+}
+.node[data-tier~="Novice"] .tier {
+  background: rgba(148,163,184,.14);
+  border-color: rgba(148,163,184,.45);
+}
