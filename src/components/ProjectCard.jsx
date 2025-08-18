@@ -8,11 +8,11 @@ export default function ProjectCard({ item }) {
   const handleMove = (e) => {
     const el = cardRef.current;
     if (!el) return;
-    // Respect reduced motion + ignore on touch
+    
     const mql = window.matchMedia("(prefers-reduced-motion: reduce)");
     if (mql.matches || !e.currentTarget.matches(":hover")) return;
 
-    // throttle with rAF for smoothness
+    
     cancelAnimationFrame(rafRef.current);
     rafRef.current = requestAnimationFrame(() => {
       const rect = el.getBoundingClientRect();
@@ -21,7 +21,7 @@ export default function ProjectCard({ item }) {
       const px = x / rect.width;   // 0..1
       const py = y / rect.height;  // 0..1
 
-      // map to tilt (subtle!)
+     
       const rotX = (py - 0.5) * -10; // up/down
       const rotY = (px - 0.5) * 14;  // left/right
 

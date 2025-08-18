@@ -19,7 +19,7 @@ export default function LandingGate() {
   }, []);
 
   if (!ready) return null;
-  if (name || skip) return null; // already identified -> don't render gate
+  if (name || skip) return null; 
 
   const onSubmit = (e) => {
     e.preventDefault();

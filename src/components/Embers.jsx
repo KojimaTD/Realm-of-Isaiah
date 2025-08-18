@@ -1,18 +1,17 @@
 import { useEffect, useRef } from "react";
 
 /**
- * Ambient embers canvas (perf-friendly).
- * Drops into App just under <Navbar />.
+ * Ambient embers canvas 
  */
 export default function Embers({
   enabled = true,
   /** particles per pixel (very small number) */
   density = 0.00012,
-  /** hard cap so we never go wild on 4k screens */
+  /** hard cap */
   maxParticles = 90,
   /** target frame rate for animation (soft) */
   targetFPS = 45,
-  /** clamp devicePixelRatio so we don’t oversample */
+  /** clamp devicePixelRatio */
   maxDPR = 1.5,
   /** base size scaling */
   sizeMultiplier = 6,

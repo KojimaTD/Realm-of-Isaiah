@@ -1,4 +1,3 @@
-/* ---------- Fonts (keep as-is if you already have these files) ---------- */
 @font-face {
   font-family: "Breathe Fire III";
   src: url("/fonts/BreatheFireIII.ttf") format("truetype");
@@ -52,7 +51,7 @@ body{
   position: relative;
 }
 
-/* DIM + VIGNETTE layers so content is readable over the art */
+
 body::before,
 body::after{
   content:"";

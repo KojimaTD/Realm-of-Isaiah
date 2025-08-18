@@ -94,7 +94,7 @@
 /* connector anchor + line */
 .link { position: relative; display: block; }
 
-/* faint connector line “up” to previous */
+/* faint connector previous */
 .link::before {
   content: "";
   position: absolute;

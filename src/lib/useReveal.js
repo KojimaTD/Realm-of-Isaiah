@@ -32,7 +32,7 @@ function useRevealInternal(options = {}) {
     const el = ref.current;
     if (!el) return;
 
-    // Ensure base class is applied immediately
+    // Ensures base class is applied immediately
     el.classList.add(opts.baseClass);
 
     const io = new IntersectionObserver(

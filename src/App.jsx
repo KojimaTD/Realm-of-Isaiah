@@ -10,7 +10,6 @@ import SkillTree from "./sections/SkillTree";
 import QuestLog from "./sections/QuestLog";
 import Contact from "./sections/Contact";
 
-// global styles are already imported in main.jsx, so no need to import here again
 
 export default function App() {
   return (

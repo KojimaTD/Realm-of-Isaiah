@@ -7,7 +7,7 @@ export default function Contact() {
           Prefer email? <a href="mailto:isaiahking2120@gmail.com">isaiahking2120@gmail.com</a>
         </p>
 
-        {/* FormSubmit sends directly to your inbox; no backend needed */}
+        
         <form
           action="https://formsubmit.co/isaiahking2120@gmail.com"
           method="POST"
@@ -18,9 +18,7 @@ export default function Contact() {
           <input type="hidden" name="_captcha" value="false" />
           {/* Honeypot anti-bot */}
           <input type="text" name="_honey" style={{ display: "none" }} tabIndex="-1" autoComplete="off" />
-          {/* Optional redirect after submit:
-          <input type="hidden" name="_next" value="https://your-gh-pages-url/#contact" />
-          */}
+          
 
           <label>
             Name

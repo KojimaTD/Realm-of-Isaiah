@@ -4,7 +4,7 @@ import useScrollSpy from "../lib/useScrollSpy";
 
 function Navbar() {
   const sectionIds = NAV.map((n) => n.id);
-  const activeId = useScrollSpy(sectionIds, 88); // adjust if your header height changes
+  const activeId = useScrollSpy(sectionIds, 88); // adjust if header height changes
 
   return (
     <header className={styles.navbar}>

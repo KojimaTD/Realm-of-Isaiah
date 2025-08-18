@@ -1,6 +1,6 @@
 import styles from "../styles/SkillTreeBoard.module.css";
 
-// Simple data (fun + recruiter-friendly)
+
 const TREE = [
   {
     branch: "Frontend",

@@ -4,7 +4,7 @@ import VisitorCtx from "./VisitorContext";
 const KEY_NAME = "visitorName";
 const KEY_SKIP = "visitorSkip";
 
-// component-only export keeps Fast Refresh happy
+// component-only export 
 export default function VisitorProvider({ children }) {
   const [ready, setReady] = useState(false);
   const [name, setName] = useState("");

@@ -3,7 +3,7 @@ import quests from "../data/quests.json";
 import { useVisitor } from "../lib/useVisitor";
 
 // ——— Files go in: /public/resume/<FILE>
-const RESUME_FILE = "Isaiah_King_Resume.pdf"; // <-- make sure this matches EXACTLY
+const RESUME_FILE = "Isaiah_King_Resume.pdf"; 
 const RESUME_PATH = `${import.meta.env.BASE_URL}resume/Isaiah_King_Resume.pdf`;
 const GITHUB_URL = "https://github.com/IsaiahKing2120";
 
@@ -55,7 +55,7 @@ export default function QuestLog() {
         ))}
       </div>
 
-      {/* CTA bar — above your contact form */}
+      {/* CTA bar — above the contact form */}
       <div className={styles.cta} role="group" aria-label="Quick links">
         <a className={styles.ctaBtn} href={GITHUB_URL} target="_blank" rel="noreferrer noopener">
           Visit My GitHub

@@ -8,4 +8,4 @@ export function useVisitor() {
   return ctx;
 }
 
-export default useVisitor; // optional; you can import { useVisitor } or default
+export default useVisitor; 
