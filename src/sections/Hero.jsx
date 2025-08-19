@@ -18,6 +18,7 @@ export default function Hero() {
         </p>
 
         <div className={styles.row}>
+          <a className={styles.btn} href="#showcase">View Showcase</a>
           <a className={styles.btn} href="#projects">View Projects</a>
           <a className={styles.ghost} href="#contact">Contact</a>
         </div>

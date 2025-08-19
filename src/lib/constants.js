@@ -5,9 +5,12 @@ export const SITE = {
 };
 
 export const NAV = [
-  { id: "hero", label: "Home" },
-  { id: "projects", label: "Projects" },
+  { id: "hero",      label: "Home" },
+  { id: "about",     label: "About" },
+  { id: "showcase",  label: "Showcase" },
+  { id: "projects",  label: "Projects" },
   { id: "skilltree", label: "Skill Tree" },
-  { id: "questlog", label: "Quest Log" },
-  { id: "contact", label: "Contact" },
+  { id: "questlog",  label: "Quest Log" },
+  { id: "contact",   label: "Contact" },
 ];
+

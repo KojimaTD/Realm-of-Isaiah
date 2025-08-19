@@ -1,43 +1,30 @@
 // src/App.jsx
 import Navbar from "./components/Navbar";
-import Footer from "./components/Footer";
-import Embers from "./components/Embers";
-
-import LandingGate from "./sections/LandingGate";
 import Hero from "./sections/Hero";
+import About from "./sections/About";
+import Showcase from "./sections/Showcase";
 import Projects from "./sections/Projects";
 import SkillTree from "./sections/SkillTree";
 import QuestLog from "./sections/QuestLog";
 import Contact from "./sections/Contact";
-
+import Footer from "./components/Footer";
+import Embers from "./components/Embers";
+import "./styles/global.css";
 
 export default function App() {
   return (
     <>
       <Navbar />
-
-      {/* Ambient FX behind content */}
-      <Embers
-        density={0.0001}
-        maxParticles={85}
-        targetFPS={45}
-        maxDPR={1.5}
-        sizeMultiplier={6}
-        speedY={-9}
-        wind={0.5}
-      />
-
-      {/* Shows only when no name/skip is set */}
-      <LandingGate />
-
+      <Embers />
       <main>
-        <Hero />
+        <Hero />        {/* Home */}
+        <About />
+        <Showcase />    
         <Projects />
         <SkillTree />
         <QuestLog />
         <Contact />
       </main>
-
       <Footer />
     </>
   );

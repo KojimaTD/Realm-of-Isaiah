@@ -26,5 +26,16 @@
     "summary": "Lightweight React project for events—forms, validation, and basic state patterns.",
     "tags": ["React", "Frontend"],
     "repo": "https://github.com/IsaiahKing2120/Event-planner"
+  },
+  {
+  "id": "portfolio",
+  "title": "Realm of Isaiah (Portfolio Site)",
+  "summary": "A custom RPG-themed portfolio site built with React, Vite, and GitHub Pages deployment.",
+  "date": "2025-08-01",
+  "tags": ["React", "Vite", "CSS Modules", "GitHub Pages"],
+  "links": {
+    "live": "https://isaiahking2120.github.io/Realm-of-Isaiah/",
+    "repo": "https://github.com/IsaiahKing2120/Realm-of-Isaiah"
   }
+}
 ]
