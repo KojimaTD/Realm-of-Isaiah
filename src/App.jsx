@@ -1,4 +1,5 @@
 // src/App.jsx
+import landingGate from "./sections/landingGate";
 import Navbar from "./components/Navbar";
 import Hero from "./sections/Hero";
 import About from "./sections/About";
